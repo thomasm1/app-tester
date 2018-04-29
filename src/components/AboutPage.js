@@ -6,6 +6,7 @@ import '../styles/about-page.css';
 const AboutPage = () => {
   return (
     <div>
+    <h1>TMM</h1>
       <h2 className="alt-header">About</h2>
       <p>
         This example app is part of the <a href="https://github.com/coryhouse/react-slingshot">React-Slingshot
