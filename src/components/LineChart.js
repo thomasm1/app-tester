@@ -75,6 +75,7 @@ class LineChart extends Component {
 
   render() {
     return (
+        <div>
       <svg width={this.elementWidth} height={this.elementHeight}>
 
           <g transform={`translate(${this.margin.left}, ${this.margin.top})`}>
@@ -91,6 +92,7 @@ class LineChart extends Component {
           </g>
 
       </svg>
+      </div>
     );
   }
 }

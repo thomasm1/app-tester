@@ -16,12 +16,19 @@ import NotFoundPage from './NotFoundPage';
 
 class App extends React.Component {
   render() {
-    const activeStyle = { color: 'blue' };
+    const activeStyle = { color: 'blue',
+  backgroundColor:'aliceblue',padding:'8px' };
+    const bg = { backgroundColor: 'lightsteelblue',
+  padding: '10px',
+margin: '10px',
+width:'110%' };
+const nav = { padding:'10px', margin:'0 20px 40px',fontSize:'2rem',
+
+}
     return (
-      <div>
-        <div>
-        
-      <h1>TMM</h1>
+      <div style={bg} >
+        <div style={nav}>
+         
           <NavLink exact to="/" activeStyle={activeStyle}>Home</NavLink>
           {' | '}
           <NavLink to="/fuel-savings" activeStyle={activeStyle}>Demo App</NavLink>
