@@ -1,7 +1,7 @@
 {
   "name": "app-tester",
   "version": "0.2.0",
-  "description": "D43+ React and Redux",
+  "description": "Functions tester, D3-data-tester, D3+ React and Redux",
   "engines": {
     "npm": ">=3"
   },

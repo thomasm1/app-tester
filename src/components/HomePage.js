@@ -6,12 +6,7 @@ const HomePage = () => {
     <div>
       <h1>TMM</h1>
  
-      <ol>
-        <li>Review the <Link to="/fuel-savings">demo app</Link></li>
-        <li>
-      <h4>TMM</h4></li>   <li>
-      <h4>TMM</h4></li>
-      </ol>
+      <Link to="/fuel-savings">FUEL SAVINGS REACT APP</Link> 
     </div>
   );
 };
