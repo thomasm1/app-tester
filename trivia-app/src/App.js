@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import logo from './logo.svg';
 import './App.css';
 
+import { submitAnswer } from './actions/actions';
 class App extends Component {
   render() {
     return (
@@ -18,4 +20,16 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  score: state.reducer.score,
+});
+const mapDispatchToProps = dispatch => ({
+  submitAnswer: answer => dispatch(submitAnswer(answer)),
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
+ 
+// export default App;
