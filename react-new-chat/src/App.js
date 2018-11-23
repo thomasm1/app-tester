@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { Component } from 'react';
 import firebase from './firebase';
 import './App.css';
@@ -18,7 +19,7 @@ class App extends Component {
     this.state = {
       messages: [
         'hello world', 
-        'message number two',
+        'message number 3',
       ],
     }
   }
@@ -40,7 +41,7 @@ class App extends Component {
   addNewMessage = message => {
     const messagesRef = firebase.database().ref('messages');
     messagesRef.push({
-      username: 'TomTom',
+      username: 'Test',
       message,
     }, function(error) {
       if(error) {

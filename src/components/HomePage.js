@@ -4,9 +4,12 @@ import { Link } from 'react-router-dom';
 const HomePage = () => {
   return (
     <div>
-      <h1>TMM</h1>
+      <h1>Welcome to TMM</h1>
  
-      <Link to="/fuel-savings">FUEL SAVINGS REACT APP</Link> 
+      <hr></hr>
+      <h5>Shortcuts :</h5>
+      <Link to="/fuel-savings"><i>FUEL SAVINGS REACT APP</i></Link> 
+
     </div>
   );
 };

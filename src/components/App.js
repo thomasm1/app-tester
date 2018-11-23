@@ -4,10 +4,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Switch, NavLink, Route } from 'react-router-dom';
 import HomePage from './HomePage';
+import Footer from './mods/Footer';
 import FuelSavingsPage from './containers/FuelSavingsPage';
 import AboutPage from './AboutPage';
 import ProjectTodo from './ProjectTodo';
 import LineChart from './LineChart';
+import Modal from './mods/Modal';    
 import NotFoundPage from './NotFoundPage';
 
 // This is a class-based component because the current
@@ -17,11 +19,12 @@ import NotFoundPage from './NotFoundPage';
 class App extends React.Component {
   render() {
     const activeStyle = { color: 'blue',
-  backgroundColor:'aliceblue',padding:'8px' };
+  backgroundColor:'aliceblue', padding:'8px' };
     const bg = { backgroundColor: 'lightsteelblue',
   padding: '10px',
+  opacity: .75,
 margin: '10px',
-width:'110%' };
+width:'130%' };
 const nav = { padding:'10px', margin:'0 20px 40px',fontSize:'2rem',
 
 }
@@ -31,7 +34,7 @@ const nav = { padding:'10px', margin:'0 20px 40px',fontSize:'2rem',
          
           <NavLink exact to="/" activeStyle={activeStyle}>Home</NavLink>
           {' | '}
-          <NavLink to="/fuel-savings" activeStyle={activeStyle}>Demo App</NavLink>
+          <NavLink to="/fuel-savings" activeStyle={activeStyle}>Calculator</NavLink>
           {' | '}
           <NavLink to="/about" activeStyle={activeStyle}>About</NavLink>
         </div>
@@ -40,9 +43,12 @@ const nav = { padding:'10px', margin:'0 20px 40px',fontSize:'2rem',
           <Route path="/fuel-savings" component={FuelSavingsPage} />
           <Route path="/about" component={AboutPage} />
           <Route component={NotFoundPage} />
-        </Switch>
+        </Switch> 
+        <hr />
+<Modal />
         <ProjectTodo/>
         <LineChart elementWidth={600} elementHeight={270} />
+        <Footer />
       </div>
     );
   }

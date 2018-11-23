@@ -5,9 +5,11 @@ import '../css/modal.css'
 
 export default () => (  
 <Modal
-  header='OUR DAILY TECH'
+  header='OUR DAILY TECH BLOG'
   fixedFooter
-  trigger={<Button className="button">OUR DAILY TECH</Button>}> 
+  trigger={<Button className="button">
+  <hr />
+  OUR DAILY TECH BLOG</Button>}> 
 	<div className="modBehave "> 
 
 

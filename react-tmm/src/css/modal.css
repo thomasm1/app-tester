@@ -1,20 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton:100,200,300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-body {
-            font-family: 'Roboto', sans-serif;
-            background: blue url('../img/silverchip.png') ; 
-            max-width:950px;
-            margin-left:auto;
-            margin-right:auto; 
-            min-width: 100%;
-            *width: 100%;
-            overflow-x:none;   p{
-            font-weight:400;
-        }
-        
-    }  
-
+ 
     .modal-content   {  
         padding:0px ;
         margin:0px;  
@@ -35,7 +22,7 @@ body {
 
 }
 div#modal_0 {    
-    min-height:1000px;  
+    min-height:600px;  
 } 
        
 .modBehave { 

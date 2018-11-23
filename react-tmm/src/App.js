@@ -21,7 +21,7 @@ class App extends Component {
       
      <Carousel />
  
-<Footer />
+    <Footer />
       </div>
     );
   }
