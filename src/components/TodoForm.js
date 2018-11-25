@@ -1,4 +1,5 @@
 var React = require('react');
+import Button from './mods/Button';   
 
 class TodoForm extends React.Component {
   constructor(props) {
@@ -20,6 +21,7 @@ class TodoForm extends React.Component {
     return (
       <form className="form-group" onSubmit={this.handleFormSubmit}>
         <input type="text" className="form-control" placeholder="Add Todo Item" ref={this.handleRefInputEvt}/>
+        <Button />
       </form>
     );
   }

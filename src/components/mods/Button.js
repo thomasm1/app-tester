@@ -4,11 +4,10 @@
 
         export default () => (
           <div> 
-  <Button waves='light'>
-  <Icon>thumb_up</Icon>
+         <hr></hr> 
+  <Button waves='light'> 
+  <Icon> Add </Icon>  
 </Button>
-          <Button waves='light'>
-            <Icon>thumb_down</Icon>
-          </Button>
+         <hr></hr>  
           </div>
         )
