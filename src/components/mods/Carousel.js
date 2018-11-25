@@ -1,28 +1,29 @@
 
 import React from 'react';
-import {Navbar, NavItem, Dropdown, MenuItem, SideNav, SideNavItem, Carousel, Breadcrumb, Button, Modal, CollapsibleItem, Collapsible   } from 'react-materialize';
-import logo from '../logo.svg';
+import { Carousel,   Button, Modal, CollapsibleItem, Collapsible   } from 'react-materialize';
+
+// import logo from '../logo.svg';    Navbar, NavItem, Dropdown, MenuItem, SideNav, SideNavItem,
 
 import '../css/navbar.css';
 
 export default () => ( 
   <div>
   <Carousel  images={[
-  '../img/art1.jpg', 
-  '../img/art2.jpg', 
-  '../img/art3.jpg', 
-  '../img/art4.jpg', 
-  '../img/art5.jpg', 
-  '../img/art6.jpg', 
-  '../img/art7.jpg', 
-  '../img/art8.jpg', 
-  '../img/art9.jpg', 
-  '../img/art10.jpg', 
-  '../img/art11.jpg', 
-  '../img/art12.jpg', 
-  '../img/art13.jpg', 
-  '../img/art15.jpg', 
-  '../img/art0.jpg'   
+  '../../styles/img/art1.jpg', 
+  '../../styles/img/art2.jpg', 
+  '../../styles/img/art3.jpg', 
+  '../../styles/img/art4.jpg', 
+  '../../styles/img/art5.jpg', 
+  '../../styles/img/art6.jpg', 
+  '../../styles/img/art7.jpg', 
+  '../../styles/img/art8.jpg', 
+  '../../styles/img/art9.jpg', 
+  '../../styles/img/art10.jpg', 
+  '../../styles/img/art11.jpg', 
+  '../../styles/img/art12.jpg', 
+  '../../styles/img/art13.jpg', 
+  '../../styles/img/art15.jpg', 
+  '../../styles/img/art0.jpg'   
 ]} />
 <Collapsible>
   <CollapsibleItem header='First' icon='filter_drama'>

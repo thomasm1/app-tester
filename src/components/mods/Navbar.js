@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {Navbar, NavItem } from 'react-materialize';
-import logo from '../logo.svg'; 
+// import logo from '../logo.svg'; 
 import '../css/navbar.css';
 
 export default () => (  
@@ -9,7 +9,7 @@ export default () => (
 <Navbar className="navbar navbar-default" brand='OUR DAILY TECH BLOG' left> 
  
 
-  <img src="src/img/thomas-maestas.jpg" alt="picture of Thomas at Satellite Cafe, Albuquerque Central Ave. " className="profile"
+  <img src="../../styles/img/thomas-maestas.jpg" alt="picture of Thomas at Satellite Cafe, Albuquerque Central Ave. " className="profile"
   />
 
   <div className="container  ">
@@ -38,7 +38,7 @@ export default () => (
 
         <li>
 
-          <a href="https://twitter.com/ThomasMaestas" target="_blank">
+          <a href="https://twitter.com/ThomasMaestas" >
 
             <i className="fa fa-twitter"></i>
 
@@ -48,7 +48,7 @@ export default () => (
 
         <li>
 
-          <a href="https://www.facebook.com/thomas.m.maestas" target="_blank">
+          <a href="https://www.facebook.com/thomas.m.maestas" >
 
             <i className="fa fa-facebook"></i>
 
@@ -58,7 +58,7 @@ export default () => (
 
         <li>
 
-          <a href="http://linkedin.com/in/thomasmaestas" target="_blank">
+          <a href="http://linkedin.com/in/thomasmaestas" >
 
             <i className="fa fa-linkedin"></i>
 
