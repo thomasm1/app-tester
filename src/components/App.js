@@ -7,9 +7,6 @@ import HomePage from './HomePage';
 import Footer from './mods/Footer';
 import FuelSavingsPage from './containers/FuelSavingsPage';
 import AboutPage from './AboutPage';
-import ProjectTodo from './ProjectTodo';
-import LineChart from './LineChart';
-import Modal from './mods/Modal';    
 import NotFoundPage from './NotFoundPage';
 
 // This is a class-based component because the current
@@ -37,17 +34,16 @@ const nav = { padding:'10px', margin:'0 20px 40px',fontSize:'2rem',
           <NavLink to="/fuel-savings" activeStyle={activeStyle}>Calculator</NavLink>
           {' | '}
           <NavLink to="/about" activeStyle={activeStyle}>About</NavLink>
+        
         </div>
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/fuel-savings" component={FuelSavingsPage} />
-          <Route path="/about" component={AboutPage} />
+          <Route path="/about" component={AboutPage} /> 
+          
           <Route component={NotFoundPage} />
         </Switch> 
         <hr />
-<Modal />
-        <ProjectTodo/>
-        <LineChart elementWidth={600} elementHeight={270} />
         <Footer />
       </div>
     );
