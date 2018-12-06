@@ -18,6 +18,8 @@ class App extends Component {
         <Modal />
         </header>
        <Dropdown />
+       <Card />
+       <Button />
       
      <Carousel />
  
