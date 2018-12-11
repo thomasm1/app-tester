@@ -2,13 +2,20 @@
 import React from 'react';
 import { Button, Modal } from 'react-materialize';
 import '../css/modal.css'
+const mods = { 
+	backgroundColor:'darkblue',
+	padding:'20px',
+	color:'white'
+} 
 
 export default () => (  
 <Modal
-  header='OUR DAILY TECH'
+  header='OUR DAILY TECH' 
   fixedFooter
-  trigger={<Button className="button">OUR DAILY TECH</Button>}> 
-	<div className="modBehave ">  
+  style={mods}
+  trigger={<Button className="button" data-toggle="modal" data-target="#modBehave">OUR DAILY TECH</Button>}> 
+
+	<div className="modBehave   fade" id="modBehave"   >  
 
 
 			<div id="top"></div>

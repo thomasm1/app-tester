@@ -5,17 +5,14 @@ import PropTypes from 'prop-types';
 import { Switch, NavLink, Route } from 'react-router-dom';
 import HomePage from './HomePage';
 import Footer from './mods/Footer'; 
+import Modal from './mods/Modal'; 
   // import Carousel from './mods/Carousel';
 // import Navbar from './mods/Navbar';
 import FuelSavingsPage from './containers/FuelSavingsPage';
 import AboutPage from './AboutPage';
 import BlogPage from './BlogPage';  //   <Route path="/blog" component={BlogPage} />  
 import NotFoundPage from './NotFoundPage';
-import '../styles/styles.scss'; 
-
-// This is a class-based component because the current
-// version of hot reloading won't hot reload a stateless
-// component at the top-level.
+import '../styles/styles.scss';  
 
 class App extends React.Component {
   render() {
@@ -32,14 +29,14 @@ width:'130%' };
     const bg = { backgroundColor: 'transparent',
   padding: '10px',
   opacity: .75,
-margin: '10px',
-minHheight:'500px',
-backgroundColor:'rgba(50, 160, 197, 0.322)',
-width:'130%' };
-const nav = { padding:'10px', margin:'0 20px 40px',fontSize:'2rem', lineHeight:'2.5rem',
+  margin: '10px',
+  minHheight:'500px',
+  backgroundColor:'rgba(50, 160, 197, 0.322)',
+  width:'130%' };
+  const nav = { padding:'10px', margin:'0 20px 40px',fontSize:'2rem', lineHeight:'2.5rem',
 
-}
-    return (
+  }
+      return (
       <div style={bg} >
       
         <div style={nav} className="subdailytech white hover" >
@@ -63,6 +60,7 @@ const nav = { padding:'10px', margin:'0 20px 40px',fontSize:'2rem', lineHeight:'
           
           <Route component={NotFoundPage} />
         </Switch> 
+    <Modal />
         </div>
         <hr /> 
         <Footer />

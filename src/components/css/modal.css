@@ -2,23 +2,23 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 body {
-            font-family: 'Roboto', sans-serif;
-            background: blue url('../../styles/img/silverchip.png') ; 
-            max-width:950px;
-            margin-left:auto;
-            margin-right:auto; 
-            min-width: 100%;
-            *width: 100%;
-            overflow-x:none;    
-    }  
+        font-family: 'Roboto', sans-serif;
+        background: blue url('../../styles/img/silverchip.png') ; 
+        max-width:950px;
+        margin-left:auto;
+        margin-right:auto; 
+        min-width: 100%;
+        *width: 100%;
+        overflow-x:none;    
+}  
 
-    .modal-content   {  
-        padding:0px ;
-        margin:0px;  
-        background-color: rgba(0,0,200,.5);
-        background-image: url('../../styles/img/MaestasReykjavikBanner.png'); 
-    
-    }   
+.modal-content   {  
+    padding:0px ;
+    margin:0px;  
+    background-color: rgba(0,0,200,.5);
+    background-image: url('../../styles/img/MaestasReykjavikBanner.png'); 
+
+}   
 .modal-content h4 {
     font-family: 'Monoton', sans-serif !important;
     padding:0px;
@@ -32,12 +32,12 @@ body {
 
 }
 div#modal_0 {    
-    min-height:1000px;  
+    min-height:800px;  
 } 
        
 .modBehave { 
     padding: 3%;
-    margin: 0%;
+    margin: 20%;
     max-height:800px; 
     color: darkslategray;
     background-color:rgb(206, 229, 248); 
@@ -47,7 +47,7 @@ div#modal_0 {
 @media (min-width: 700px) {
     .modBehave { 
         padding: 10%;
-        margin: 0%;
+        margin: 10%;
         max-height:800px; 
         color: darkslategray;
         background-color:rgb(206, 229, 248); 
@@ -130,7 +130,8 @@ strong {
     font-weight: bold;
     border: solid thin darkslategrey;
     padding: 4pt;
-    margin: 5px 4px 0px 0px;
+    margin: 5px 10px 5px 0px;
+    line-height:1.7;
 }
 
 img.rounded-circle {
@@ -170,7 +171,7 @@ a.trans-back {
     padding-bottom:2%;
     font-family: 'Monoton';
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 2rem; 
 }
 
 .subdailytech {
@@ -178,8 +179,9 @@ a.trans-back {
     font-weight: 100;
     font-size: 1.2rem;
     line-height: 1.3rem;
-    text-align: center;
-    color:darkblue;
+    text-align: center; 
+ color:darkblue;
+ font-family:'Monoton';
  
 } 
 #tom {
@@ -278,3 +280,29 @@ p.mb4card {
 
 
   /*   mb-4        321111111111111       to mb4card */
+   
+#blogs {
+    cursor:pointer;
+    padding:0px;
+}
+.blog {
+    float: left;
+    min-height: 500px;
+    max-height: 500px;
+    width: 100%;
+    border: inset 2px silver;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.blog h2, h3 {
+    text-shadow: 3px 3px 3px #aaa;
+    font-size: 1em; 
+    padding: 3px 4px 3px 4px;   
+    margin-bottom: 5px;  
+}
+
+.blog p {
+    line-height: 1.2em;
+}
