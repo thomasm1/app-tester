@@ -1,0 +1,17 @@
+[
+    {
+        "book_id": 1,
+        "title": "Goodnight Moon",
+        "author": "Margaret Wise Brown",
+        "year_published": "1953"
+    },
+    {
+        "book_id": 2,
+        "title": "Greessssssssssssssssssssssssssss",
+        "author": "Dr. sssssssssssssssSeuss",
+        "year_published": "1960ssssssssssssssssssssssssssssss"
+    },
+    {
+        "book_id": 3
+    }
+]
