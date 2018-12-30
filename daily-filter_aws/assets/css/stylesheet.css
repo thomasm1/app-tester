@@ -26,23 +26,23 @@ input {
   padding-left: 15px;
   line-height: 42px;
   font-size: 16px;
-  border: 1px #69D2E7 solid;
+  border: 1px rgba(105, 139, 231, 0.753) solid;
 }
 input:focus {
-  outline: 3px #69D2E7 solid;
+  outline: 3px rgba(67, 100, 190, 0.562) solid;
 }
 button {
-  background-color: #69D2E7;
+  background-color: rgb(53, 52, 34);
   padding: 15px;
   color: white;
   text-decoration: none;
   border: 0;
   font-size: 16px;
-  border-right: solid 6px #A7DBD8;
+  border-right: solid 6px rgb(139, 139, 139);
 }
 button:hover,
 button:focus {
-  background-color: #A7DBD8;
+  background-color: rgb(65, 86, 158);
   cursor: pointer;
   outline: none;
 }
@@ -109,16 +109,16 @@ button:focus {
   width: 100px;
 }
 .pizza-boxes li:nth-child(3n+1) {
-  background-color: #69D2E7;
-  border-right: solid 6px #A7DBD8;
+  background-color: rgb(105, 145, 231);
+  border-right: solid 6px rgb(131, 131, 131);
 }
 .pizza-boxes li:nth-child(3n+2) {
   background-color: #A7DBD8;
   border-right: solid 6px #CFEFED;
 }
 .pizza-boxes li:nth-child(3n+3) {
-  background-color: #F38630;
-  border-right: solid 6px #FDBD8A;
+  background-color: rgb(109, 80, 80);
+  border-right: solid 6px rgb(65, 46, 54);
 }
 .pizza-boxes li a {
   color: white;
@@ -127,7 +127,7 @@ button:focus {
 }
 footer {
   text-align: center;
-  background-color: #F38630;
+  background-color: rgb(117, 114, 111);
   color: white;
   padding: 35px 0;
   width: 100%;
@@ -217,7 +217,7 @@ footer a {
 }
 
 #pizzaSection #pizza {
-  border: solid 1px #69D2E7;
+  border: solid 1px rgb(105, 128, 231);
 }
 #toppingSection #toppings {
   display: flex;
@@ -235,7 +235,7 @@ footer a {
   max-width: 100px;
 }
 #toppingSection #toppings .topping.added {
-  background-color: #A7DBD8;
+  background-color: rgb(111, 126, 194);
   color: white;
 }
 
