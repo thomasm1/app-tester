@@ -42,10 +42,10 @@
 
   export var dogPlaces = {
     home: <DogDomain>{ name: 'home', imagePath: 'zeusinside.jpg', indoors: true, placeObjects: [] },
-    frontYard: <DogDomain>{ name: 'front yard', imagePath: 'zeusfrontyard.jpg', indoors: false, placeObjects: [] },
-    backYard: <DogDomain>{ name: 'back yard', imagePath: 'zeusbackyard.jpg', indoors: false, placeObjects: [] },
-    park: <DogDomain>{ name: 'park', imagePath: 'zeuspark.jpg', indoors: false, placeObjects: [] },
-    bathroom: <DogDomain>{ name: 'bathroom', imagePath: 'fireplug.jpg', indoors: false, placeObjects: [] }
+    frontYard: <DogDomain>{ name: 'front yard', imagePath: 'zeusfrontyard.png', indoors: false, placeObjects: [] },
+    backYard: <DogDomain>{ name: 'back yard', imagePath: 'zeusbackyard.png', indoors: false, placeObjects: [] },
+    park: <DogDomain>{ name: 'park', imagePath: 'zeuspark.png', indoors: false, placeObjects: [] },
+    bathroom: <DogDomain>{ name: 'bathroom', imagePath: 'ancientscience.jpg', indoors: false, placeObjects: [] }
   };
   export type DogPlaces = typeof dogPlaces;
 

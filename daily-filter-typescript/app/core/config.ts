@@ -1,6 +1,6 @@
 ﻿namespace dogsrus.virtdog {
   export var dogConfiguration = {
-    appTitle: 'Virtual Dog Demo',
+    appTitle: 'Daily Tech Filter',
     version: '1.0.0',
     startDog: <IDog>{
       age: 9,
@@ -20,38 +20,38 @@
       motherNature2Interval: 1000 * 60 * 60 * 8,
       speciesName: 'canis familiaris',
       squeakyOcdChewCount: 10,
-      startupBlog: 'I laid down and knocked my tail on the floor twice.',
+      startupBlog: ' .',
       tailState: DogTailState.elevated,
       tailStyle: 'curved and furry'
     },
     otherDogs: <IDog[]>[{
         age: 0.1,
         barkSound: 'yip',
-        breed: 'Mongrel',
+        breed: 'Mo ',
         chewUrgeInterval: 1000 * 15,
         coatStyle: '',
-        defaultAction: 'Lay around',
+        defaultAction: '  around',
         dogLonelyDuration: 1000 * 60 * 60 * 6,
         dogLonelyEndurance: 1000 * 10,
         dogSleepDuration: 1000 * 60 * 4,
         dogTiredInterval: 1000 * 60 * 2,
         earState: '',
         earStyle: '',
-        familiarName: 'Puppy Trouble',
+        familiarName: '  Trouble',
         motherNature1Interval: 1000 * 60,
         motherNature2Interval: 1000 * 60 * 60 * 1,
-        speciesName: 'Canis familiaris',
+        speciesName: ' familiaris',
         squeakyOcdChewCount: 3,
-        startupBlog: 'I wagged my tail, no I wagged my whole body! And while I did that I did my other favorite thing, I wet all over!',
+        startupBlog: ' all over!',
         tailState: DogTailState.wagging,
         tailStyle: ''
       }, {
         age: 5,
         barkSound: 'ruf',
-        breed: 'Labrador',
+        breed: 'Lab ',
         chewUrgeInterval: 1000 * 60 * 60 * 6,
         coatStyle: '',
-        defaultAction: 'Lay around',
+        defaultAction: 'Lay  ',
         dogLonelyDuration: 1000 * 60 * 60 * 6,
         dogLonelyEndurance: 1000 * 60 * 60 * 6,
         dogSleepDuration: 1000 * 60 * 60 * 6,
@@ -63,7 +63,7 @@
         motherNature2Interval: 1000 * 60 * 60 * 6,
         speciesName: 'Canis familiaris',
         squeakyOcdChewCount: 10,
-        startupBlog: 'I ran up to my master wagging my tail!',
+        startupBlog: 'I ran ',
         tailState: DogTailState.wagging,
         tailStyle: ''
       }]

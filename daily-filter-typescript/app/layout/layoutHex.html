@@ -3,14 +3,14 @@
     type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300,200,100,900' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="app/src/css/hexagons.css">
+  <link rel="stylesheet" type="text/css" href="dist/hexagons.css">
   <ul id="categories" class="clr">
     <!--<li class="pusher"></li>
     <li class="pusher"></li>-->
     <li>
       <div class="selectStyle" ng-controller="masterController as master">
         <img src="/content/tmm-orange.png" alt="" />
-        <h1>Master: {{master.familiarName}}</h1>
+        <h1>Agent: {{master.familiarName}}</h1>
         <p class="sliderParagraph">
           Object: <select id="selectObject" ng-model="master.selectedObject" ng-options="object.name for object in master.masterObjects"></select>
           <br><br> 
@@ -23,7 +23,7 @@
       <div class="selectStyle" ng-controller="dogDomainController as domainController">
         <!--<img ng-src="/content/bluechipTile.jpg" alt=""/>-->
         <img ng-src="/content/{{domainController.place.imagePath}}" alt="" />
-        <h1>Doggie Domain</h1>
+        <h1>  Domain</h1>
         <p class="sliderParagraph">
           Domain: <select ng-model="domainController.place" ng-options="dogPlace.name for dogPlace in domainController.places"
             ng-change="domainController.domainSelected(domainController.place)">
@@ -38,10 +38,10 @@
         <!--<div>
         <span>-->
         <!--<h3>Dog's Objects:</h3>-->
-        <br> Dog Blog
+        <br>  ECRIVAIN
         <br>
         <div id="barkButtonDiv">
-          <button class="dogButtonStyle" id="barkButton" ng-click="dog.testBark()">Bark</button>
+          <button class="dogButtonStyle" id="barkButton" ng-click="dog.testBark()">Write</button>
         </div>
         <br>
         <div>
@@ -98,7 +98,7 @@
     <li>
       <div class="selectStyle" ng-controller="peopleController as peopleCtrl">
         <img src="/content/logo.png" alt="" />
-        <h1>Other People</h1>
+        <h1>Others  </h1>
         <p class="sliderParagraph">
           Person: <select id="selectPerson" ng-model="peopleCtrl.selectedPerson" ng-options="person.familiarName for person in peopleCtrl.people"></select>
           <br><br>          
@@ -111,9 +111,9 @@
     <li>
       <div class="selectStyle" ng-controller="otherAnimalController as otherAnimalCtrl">
         <img src="/content/tmm-orange-yellow.jpg" alt="" />
-        <h1>Other Animals</h1>
+        <h1>Other  </h1>
         <p class="sliderParagraph">
-          Animal: <select id="selectAnimal" ng-model="otherAnimalCtrl.selectedAnimal" ng-options="animal.familiarName for animal in otherAnimalCtrl.otherAnimals"
+          Different: <select id="selectAnimal" ng-model="otherAnimalCtrl.selectedAnimal" ng-options="animal.familiarName for animal in otherAnimalCtrl.otherAnimals"
             ng-change="otherAnimalCtrl.performAction()">
                   </select><br>
           <br>
