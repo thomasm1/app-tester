@@ -6,6 +6,7 @@ namespace dogsrus.virtdog {
     
     /* reusable cross app code modules, e.g.  exception service, logger service    */
 
+    
     /*  3rd Party modules  */ 
      'ngAnimate',
 

@@ -15,7 +15,8 @@ namespace dogsrus.virtdog {
     'app.people',
     'app.roverPhotos',
     'app.otherAnimal',
-    'app.dogDomain' 
+    'app.dogDomain'// ,
+   // 'app.dtech'
   ]);
   // we don't ever refer to the app module except in tests
   // but the other modules may be refered 2+ times
