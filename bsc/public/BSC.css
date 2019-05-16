@@ -1,0 +1,445 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+	border-top-width: 5px;
+	border-bottom-width: 5px;
+	border-right-width: 5px;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	clear: none;
+	float: none;
+}
+#header {
+	margin-bottom: 15px;
+	background-color: #F7941D;
+}
+#header img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+}
+#topnav {
+}
+#menusystem {
+}
+.menuitem {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	color: #333333;
+	background-color: #F7941D;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+	display: block;
+	width: 100%;
+	clear: both;
+	text-decoration: none; 
+	border-color: #FFFFFF;
+	border-width: 0px 1px 0px 0px;
+	border-right-style: solid;
+}
+#parag {
+	display: block;
+}
+#sidebarleft {
+	width: 100%;
+	min-height: 450px;
+	margin-right: 20px;
+}
+#sidenav {
+}
+#content {
+clear: both;
+margin-left: 0;
+width: 100%;
+}
+#menusystemleft {
+}
+.menuitemleft {
+	width: 100%;
+	border-bottom-color: #FFFFFF;
+	border-bottom-width: 2px;
+}
+#sidenav #menusystemleft .fluid.menuitemleft {
+	color: #393939;
+	background-color: #F7941D;
+	padding-top: 16px;
+	text-align: left;
+	text-indent: 20px;
+	margin-right: 30px;
+	font-weight: normal; 
+	border-spacing: 7x 0px;
+	border-bottom: 1px solid #FFFFFF;
+	max-height: 30px;
+	padding-left: 0px;
+}
+#footer {
+	color: #05007E;
+	font-weight: normal;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: 960px 240px;
+	height: 180px;
+	max-width: none;
+	max-height: 240px;
+	text-shadow: 0px 0px; 
+	width: 100%;
+	margin-left: 0;
+}
+.gridContainer.clearfix #header #topnav #menusystem a .fluid.menuitem.zeroMargin_tablet.zeroMargin_desktop {
+	background-color: #FFFFFF; 
+}
+#rates {
+	background-color: #FFFFFF;
+	background-image: -webkit-linear-gradient(288deg,rgba(255,255,255,1.00) 0%,rgba(224,224,224,1.00) 73.58%);
+	background-image: -moz-linear-gradient(288deg,rgba(255,255,255,1.00) 0%,rgba(224,224,224,1.00) 73.58%);
+	background-image: -o-linear-gradient(288deg,rgba(255,255,255,1.00) 0%,rgba(224,224,224,1.00) 73.58%);
+	background-image: linear-gradient(162deg,rgba(255,255,255,1.00) 0%,rgba(224,224,224,1.00) 73.58%); 
+	padding-left: 20px;
+	width: 100%;
+	margin-left: 0;
+}
+.paraglist {
+width: 100%;
+margin-left: 0;
+text-align:justify;
+}
+.content {
+clear: both;
+margin-left: 0;
+width: 100%;
+position: static;
+}
+.prefooter {
+	padding-left: 20px;
+	width: 100%;
+	position: static;
+	height: auto;
+	margin-left: 0;
+}
+.contentimg {
+width: 100%;
+margin-left: 0;
+clear: both;
+position: static;
+height: auto;
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+
+
+
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width:200px){
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 0%;
+	padding-right: 0%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#header {
+	margin-left: auto;
+	margin-right: auto;
+}
+#topnav {
+}
+#menusystem {
+}
+.menuitem {
+	display: block;
+	width: 23.0769%;
+	clear: none;
+}
+#parag {
+display: block;
+}
+#sidebarleft {
+	width: 100%;
+	max-height: 100px;
+}
+#sidenav {
+}
+#content {
+clear: both;
+margin-left: 0;
+width: 100%;
+}
+#menusystemleft {
+}
+.menuitemleft {
+width: 100%;
+}
+#footer {
+
+width: 100%;
+
+margin-left: 0;
+
+}
+#rates {
+width: 100%;
+margin-left: 0;
+}
+.paraglist {
+width: 100%;
+margin-left: 0;
+}
+.content {
+clear: both;
+margin-left: 0;
+width: 100%;
+position: static;
+}
+.prefooter {
+width: 100%;
+position: static;
+height: auto;
+margin-left: 0;
+}
+.contentimg {
+width: 100%;
+margin-left: 0;
+clear: both;
+position: static;
+height: auto;
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+#header0 {
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(assets/bscbanner172.png), -webkit-linear-gradient(358deg,rgba(45,147,255,1.00) 39.38%,rgba(255,255,255,1.00) 100%);
+	background-image: url(assets/bscbanner172.png), -moz-linear-gradient(358deg,rgba(45,147,255,1.00) 39.38%,rgba(255,255,255,1.00) 100%);
+	background-image: url(assets/bscbanner172.png), -o-linear-gradient(358deg,rgba(45,147,255,1.00) 39.38%,rgba(255,255,255,1.00) 100%);
+	background-image: url(assets/bscbanner172.png), linear-gradient(92deg,rgba(45,147,255,1.00) 39.38%,rgba(255,255,255,1.00) 100%);
+	min-height: 172px;
+}
+#header0 #headerimg #preheader {
+	min-height: 172px;
+}
+
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width:470px){
+
+.gridContainer {
+	max-width: 960px;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+	background-image: -webkit-linear-gradient(313deg,rgba(255,255,255,1.00) 44.56%,rgba(159,201,235,1.00) 100%);
+	background-image: -moz-linear-gradient(313deg,rgba(255,255,255,1.00) 44.56%,rgba(159,201,235,1.00) 100%);
+	background-image: -o-linear-gradient(313deg,rgba(255,255,255,1.00) 44.56%,rgba(159,201,235,1.00) 100%);
+	background-image: linear-gradient(137deg,rgba(255,255,255,1.00) 44.56%,rgba(159,201,235,1.00) 100%);
+	border-width: medium;
+	-webkit-box-shadow: 0px 12px 20px 10px #C0C0C0;
+	box-shadow: 0px 12px 20px 10px #C0C0C0;
+}
+#header {
+	background-color: #EB9126;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 960px;
+}
+#topnav {
+}
+#menusystem {
+}
+.menuitem {
+	display: block;
+	clear: none;
+	height: 35px;
+	border-color: #FFFFFF;
+	padding-top: 10px;
+	width: 24.8%;
+	border-right-style: solid;
+	border-right-width: 1px;
+	margin-right: 0px;
+}
+#parag {
+	background-color: lightsteelblue;
+	background-image: -webkit-linear-gradient(288deg,rgba(255,255,255,1.00) 47.15%,rgba(130,214,255,1.00) 100%);
+	background-image: -moz-linear-gradient(288deg,rgba(255,255,255,1.00) 47.15%,rgba(130,214,255,1.00) 100%);
+	background-image: -o-linear-gradient(288deg,rgba(255,255,255,1.00) 47.15%,rgba(130,214,255,1.00) 100%);
+	background-image: linear-gradient(162deg,rgba(255,255,255,1.00) 47.15%,rgba(130,214,255,1.00) 100%);
+	display: inline;
+}
+#sidebarleft {
+	width: 23.7288%;
+	margin-right: 25px;
+}
+#sidenav {
+	min-width: 0px;
+}
+#content {
+margin-left: 1.6949%;
+clear: none;
+width: 66.1016%;
+}
+#menusystemleft {
+}
+.menuitemleft {
+width: 100%;
+}
+#footer {
+	width: 100%;
+	margin-left: 0;
+	text-align: center;
+}
+#rates {
+width: 74.5762%;
+margin-left: 8.4745%;
+}
+.paraglist {
+width: 87.1794%;
+margin-left: 0;
+}
+.content {
+	margin-left: 1.6949%;
+	clear: none;
+	width: 66.1016%;
+	text-align: left;
+	position: static;
+}
+.prefooter {
+	width: 91.5254%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 0;
+	position: static;
+	height: auto;
+}
+.contentimg {
+	width: 35.8974%;
+	margin-right: 30px;
+	margin-left: 2.5641%;
+	-webkit-box-shadow: 16px 16px 24px 7px rgba(160,204,241,1.00);
+	box-shadow: 16px 16px 24px 7px rgba(160,204,241,1.00);
+	margin-bottom: 20px;
+	clear: none;
+	position: static;
+	height: auto;
+}
+.zeroMargin_desktop {
+	min-height: 0px;
+	min-width: 139px;
+
+}
+.hide_desktop {
+display: none;
+}
+#sidenav #menusystemleft .fluid.menuitemleft {
+	min-height: 40px;
+	color: #393939;
+	background-color: #F7941D;
+	padding-top: 16px;
+	text-align: left;
+	text-indent: 5px;
+	margin-right: 0px;
+	font-weight: normal; 
+	border-spacing: 7x 0px;
+	border-bottom: 1px solid slategray;
+	padding-left: 5px;
+}
+#header0 {
+	height: 218px;
+	background-image: -webkit-linear-gradient(0deg,rgba(80,168,244,1.00) 31.61%,rgba(255,255,255,1.00) 100%);
+	background-image: -moz-linear-gradient(0deg,rgba(80,168,244,1.00) 31.61%,rgba(255,255,255,1.00) 100%);
+	background-image: -o-linear-gradient(0deg,rgba(80,168,244,1.00) 31.61%,rgba(255,255,255,1.00) 100%);
+	background-image: linear-gradient(90deg,rgba(80,168,244,1.00) 31.61%,rgba(255,255,255,1.00) 100%);
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+}
+#header0 #headerimg {
+	background-image: url(assets/bscbanner172.png);
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #000000;
+	min-height: 172px;
+	max-height: 172px;
+}
+#header0 #headerimg #preheader {
+	height: 172px;
+}
+.gridContainer.clearfix #newform {
+	min-height: 77px;
+	background-color: #EAF2FF;
+	padding-left: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: block;
+}
+#header0 {
+margin-top:0px;max-height:165px
+}

@@ -1,0 +1,1422 @@
+ 
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title> B S C </title>
+
+
+
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+
+    <meta name="author" content="TM Maestas">
+
+    <meta charset="utf-8">
+
+  
+
+<title>Better Statistical Consulting | Statistical Consultant</title>
+
+
+
+		<meta name="description" content="Get statistics help.  BSC offers services related to analyzing quantitative data and reporting results in academic journals and business briefs alike. Recent projects include research design, completion, analysis, and report production for Caterpillar, Inc., and data analysis for the Illinois Environmental Protection Agency and the New Mexico Department of Health. Data analysis and special pricing offers competitive benefits for clients. Not all statistical consultants are statisticians, so choose statistics help carefully. If you need help with Stata or SPSS, contact BSC and we will perform the analysis for you so you can focus on your project and avoid the statistical package learning curve." />
+
+
+
+		<meta name="keywords" content="statistical consultant, statistical analyses, statistics help, dissertation proposal, dissertation defense, qualified statistician, thesis help, statistician" />
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" type="text/css" href="./css/application.css"/>
+
+    <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+
+    <script type="text/javascript" src="./lib/d3.js"></script>
+
+<style>
+
+body {
+
+font-family: 'Roboto', sans-serif;
+
+}
+
+  
+
+    #win2 {
+
+    }  
+
+    #win3 {
+
+    min-height: 350px;
+
+    }
+
+    #win1 {
+
+min-height:400px; 
+
+height:660px;
+
+float:left;
+
+over-flow:scroll;
+
+
+
+}
+
+    .win2 {
+
+    min-height: 350px;
+
+    }
+
+    .win3 {
+
+    }
+
+.minHeight300 {
+
+    min-height: 300px;
+
+}
+
+div.gradi {
+    background:radial-gradient(
+        transparent calc(100% - var(--corner, 10px)), /* 2nd arg is called fallback*/
+        var(--color) 0);
+    --color:teal;
+    --corner: 22px;
+    color: var(--color);
+    
+}
+* {
+    outline: var(--outline);
+    --outline: initial;
+}
+.gradi {
+    --outline: blue  1px solid; 
+         opacity:.7;
+         border-width:.5px; 
+    --background: steelblue;
+    
+} 
+.gradi div {
+    --outline:initial;
+}
+.gradi.win4 div {
+    --img: "header.png";
+    background: url("images/" var(--img)) center / cover;
+}
+
+.minHeight100 {
+
+    min-height: 100px;
+
+}
+#img {
+    width:100%;
+    opacity:.8;
+    margin:0px;
+    margin-bottom:0px;
+    padding:0px;
+    border-top:1px solid;
+    border-color:teal;
+}
+ .turnBlue {
+
+ background-color:steelblue;
+
+ target:yellow;
+
+ color:white;
+
+ }
+.floatLeft 
+
+{
+
+float:left;
+
+}
+
+p {
+color:slategray;
+padding:15px;
+ 
+
+}
+
+#footer {
+    background-img:;
+}
+
+#danielle-img {
+
+margin:10px;
+
+width:50%; 
+
+float:right;
+
+padding:10px;
+
+}
+
+#bio {
+ 
+
+ padding-top:60%; 
+ text-align:justify;
+
+
+ }
+
+
+.page-title {
+
+padding-left:18%;
+
+}
+
+    body {
+
+        color:lightslategray;
+
+ text-align:justify;
+    }
+
+    .center {
+
+        text-align:center;
+
+    }
+
+	#bscbuilding { 
+
+	content-align:center; 
+
+	width:100%;
+
+	margin-bottom: 20px;
+
+	 font-size:.9rem;
+ }
+ #imgbuilding{
+     
+     margin:5%;width:90%;
+ }
+ #contact-sm {
+    float:right; 
+    padding-right:20px;
+    padding-top:20px;
+ }
+h1, h2, h3, h4, h5, h6 {   
+    opacity:.8;
+    color:darkslategray;
+}
+li {
+    color:darkslategray;
+}
+#page-title {
+    color:slategray; 
+    width:80%;
+    font-size:2em;
+    font-weight:bold;
+    background: var(--accent-color, teal);
+} 
+
+.images {
+    --img: url("images/header.png");
+    background: var(--img);
+    width:100%;
+    z-index:-1;
+
+}
+body {
+    color:darkslategray;
+}
+p {
+    color:darkslategray;
+    }
+.copyright {
+    background-color: lightgray;
+    z-index:2;
+    text-align:center;
+}
+ </style>
+ 
+
+
+
+</head>
+
+<body>
+<div id="container2"></div>
+<script type="text/javascript">
+    var data = []; // <- A
+
+    var datum = function (x) { // <- B
+        return (15 + x * x)+10;
+    };
+    
+    var newData = function () { // <- C
+        data.push(datum);
+        return data;
+    };
+
+    function render(){
+        var divs = d3.select("#container2")
+                    .selectAll("div")
+                    .data(newData); // <- D
+
+        divs.enter().append("div").append("span");
+
+        divs.attr("class", "v-bar")
+            .style("height", function (d, i) {
+                return d(i) + "px"; // <- E
+            })
+            .select("span") // <- F
+                .text(function(d, i){ 
+                    return d(i); // <- G
+                });
+
+        divs.exit().remove();
+    }
+    
+    setInterval(function () {
+        render();
+    }, 1000);
+
+    render();
+</script>
+    <div class="logo">
+<a target="_blank" href="/bsc.html"><img src="images/bsc_logo_unmSM.jpg" alt="bsc building logo" style="opacity:0.6;width:21%;position:relative;left:-68px;top:-28px;"></img>
+        <h4 class="floatLeft">
+
+        
+
+		</a></h4>
+
+  
+
+<!-- AddThis Smart Layers BEGIN -->
+
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51f2001a63f9c140"></script>
+
+<script type="text/javascript">
+
+  addthis.layers({
+
+    'theme' : 'transparent',
+
+    'share' : {
+
+      'position' : 'left',
+
+      'numPreferredServices' : 5
+
+    }   
+
+  });
+
+</script>
+
+<!-- AddThis Smart Layers END -->
+</div>
+
+        <nav id="sidebar" class="sidebar nav-collapse collapse">
+
+            <ul id="side-nav" class="side-nav">
+
+                <li class="active">
+
+                    <a href="bsc.html"><i class=" "></i> <span class="name"> <br />    </span></a>
+
+                </li>
+
+                <li class="">
+
+                    
+
+                    <a href="package.html"><i class="fa"></i> <span class="name"> <sup class="text-warning fw-bold"> </sup></span></a>
+
+                </li>
+
+                <li class="panel ">
+
+                
+
+                </li>
+
+                <li class="panel ">
+
+                 
+
+                </li>
+
+                <li class="panel ">
+
+                
+
+                </li>
+
+                <li class="panel ">
+
+             
+
+                </li>
+
+                <li class="panel ">
+
+                
+
+                </li>
+
+                <li class="panel ">
+
+                  
+
+                </li>
+
+           
+
+                <li class="visible-xs turnBlue">
+
+                    <a href="login.html"><i class="fa fa-sign-out"></i> <span class="name">Sign Out</span></a>
+
+                </li>
+
+            </ul>
+
+        
+
+            <h5 class="sidebar-nav-title"> <a class="action-link" href="#"><i class=" "></i></a></h5>
+
+            <!-- some styled links in sidebar. ready to use as links to email folders, projects, groups, etc -->
+
+            <ul class="sidebar-labels">
+
+              
+
+            </ul>
+
+
+
+            <h5 class="sidebar-nav-title">  </h5>
+
+            <!-- A place for sidebar notifications & alerts -->
+
+            <div class="sidebar-alerts">
+
+                <div class="alert fade in">
+
+                  
+
+                </div>
+
+                <div class="alert fade in">
+
+                  
+
+                </div>
+
+            </div>
+
+        </nav>    <div class="wrap">
+
+        <header class="page-header">
+
+            <div class="navbar">
+
+                <ul class="nav navbar-nav navbar-right pull-right">
+
+                    <li class="visible-phone-landscape">
+
+                        <a href="#" id="search-toggle">
+
+                            <i class="fa fa-search"></i>
+
+                        </a>
+
+                    </li>
+
+             <!--<li class="dropdown">
+
+                 
+
+                ////
+
+
+
+
+
+
+
+                    </li>
+
+            -->
+
+             
+
+                    <li class="hidden-xs dropdown"> 
+
+                    </li>
+
+                    <li class="divider"></li>
+
+                    <li class="visible-xs">
+
+                        <a href="#"
+
+                           class="btn-navbar"
+
+                           data-toggle="collapse"
+
+                           data-target=".sidebar"
+
+                           title="">
+
+                            <i class="fa fa-bars"></i>
+
+                        </a>
+
+                    </li>
+
+                    <li class="hidden-xs"><a href="login.html"><i class="glyphicon glyphicon-off"></i></a></li>
+
+                </ul>
+
+                <form id="search-form" class="navbar-form pull-right" role="search">
+
+                    <input type="search" class="form-control search-query" placeholder="Search BSC">
+
+                </form>
+
+                <div class="notifications pull-right">
+
+    <!--      <div class="alert pull-right">
+
+                        <a href="#" class="close ml-xs" data-dismiss="alert">&times;</a>
+
+                        <i class="fa fa-info-circle mr-xs"></i>   <a id="notification-link" href="#">settings</a> on the right!
+
+                    </div>
+
+                -->         
+
+             </div>
+
+            </div><br />
+
+<img id="img" class="img" src= "images/headerTsm.png"/>
+        </header>  
+        <!--<h2 id="page-title" class="page-title">BETTER STATISTICAL CONSULTING</h2>-->
+        <br />       <div class="content container">
+
+       
+
+        <div class="row">  
+
+            <div class="col-lg-8">
+
+                <section class="widget">
+
+                    <header>
+
+                        <h4> 
+
+                        </h4>
+
+                        <div class="widget-controls">
+
+                            <a title="Options" href="#"><i class="glyphicon  "></i></a>
+
+                            <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon "></i></a>
+
+                            <a data-widgster="collapse" title="Collapse" href="#"><i class="glyphicon  "></i></a>
+
+                            <a data-widgster="close" title="Close" href="#"><i class="glyphicon "></i></a>
+
+                        </div>
+
+                    </header>
+
+                    <div class="body no-margin">
+
+                        <div id="visits-chart" class="chart visits-chart">
+
+                           <div id="main" class="main"></div>
+
+                            <script type="text/javascript">
+
+                                var data = [ // <- A
+
+                                    {width: 10, color: 23},{width: 15, color: 33},
+
+                                    {width: 30, color: 40},{width: 50, color: 60},
+
+                                    {width: 80, color: 22},{width: 65, color: 10},
+
+                                    {width: 55, color: 5},{width: 30, color: 30},
+
+                                    {width: 20, color: 60},{width: 10, color: 90},
+
+                                    {width: 8, color: 10}
+
+                                ];
+
+                                var colorScale = d3.scaleLinear()
+
+                                    .domain([0, 100])
+
+                                    .range(["#7fc4f0", "teal"]);
+
+                                function render(data) {
+
+                                    var bars = d3.select(".main").selectAll("div.h-bar")
+
+                                        .data(data);
+
+                                    bars.enter()
+
+                                        .append("div")
+
+                                        .attr("class", "h-bar")
+
+                                        .merge(bars)
+
+                                        .style("width", function (d) {
+
+                                            return (d.width * 3) + "px";
+
+                                        })
+
+                                        .style("background-color", function(d){
+
+                                            return colorScale(d.color);
+
+                                        })
+
+                                        .text(function (d) {
+
+                                            return d.width;
+
+                                        });
+
+                                    bars.exit().remove();
+
+                                }
+
+                                function randomValue() {
+
+                                    return Math.round(Math.random() * 100);
+
+                                }
+
+                                setInterval(function () {
+
+                                    data.shift();
+
+                                    data.push({width: randomValue(), color: randomValue()});
+
+                                    render(data);
+
+                                }, 1000);
+
+                                render(data);
+
+                            </script>
+
+                 </div>
+
+                        <div class="visits-info well well-sm">
+
+                            <h3>BSC Professional, Personalized, Fast Service</h3>
+ 
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="widget">
+
+                    <header>
+
+                        <h4>
+
+                            
+
+                        </h4>
+
+                        <div class="widget-controls">
+
+                            <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon "></i></a>
+
+                            <a data-widgster="collapse" title="Collapse" href="#"><i class="glyphicon "></i></a>
+
+                            <a data-widgster="close" title="Close" href="#"><i class="glyphicon"></i></a>
+
+                        </div>
+
+                    </header>
+
+                    <div class="widget-table-overflow"><div class="fluid content zeroMargin_desktop"> 
+
+
+
+                        <h3 class="center">BSC Data Analysis</h3>
+
+    <hr>
+
+    <ul>
+
+
+
+      <li><strong>Data Analysis. </strong>From the most basic descriptive statistics to more complex analyses, BSC can clean data, run your analyses, and produce clear, concise reports explaining the results. Danielle's personal attention ensures that you will understand every analysis.<br>
+
+
+
+      </li>
+
+
+
+    </ul>
+
+
+
+    <br>
+
+    <ul>
+
+
+
+      <li><strong>Research Design. </strong>Before beginning an experiment or survey, let BSC work with you to ensure validity and reliability. From sampling to questionnaire design to implementation, Danielle will guide your survey from beginning to end.</li>
+
+
+
+    </ul>
+
+
+
+    <br>
+
+    <ul>
+
+
+
+      <li><strong>Data Management.</strong> Data needs to be stored after collection; let Danielle's experience with Access, Survey Monkey, and other online databases smooth the process. Surveys and forms are crisp and professional. <br>
+
+
+
+      </li>
+
+
+
+    </ul>
+
+
+
+    <br>
+
+    <ul>
+
+
+
+      <li><strong>Data Analysis Results Interpretation.</strong> BSC will provide a second look at analyses performed elsewhere or simply review a pending report for accuracy. Contact Danielle for more information on results interpretation.<br>
+
+
+
+      </li>
+
+
+
+    </ul>
+
+
+
+    <ul>
+
+
+
+      <li><strong>Tutoring</strong>. BSC provides statistics tutoring limited to the Albuquerque metro area. Classes are by the hour, on a one-time basis or ongoing according to need. Undergraduate, graduate, and high school students are welcome for tutoring. Email for rates and policies.<br>
+
+
+
+      </li>
+
+
+
+    </ul>
+
+
+ 
+
+
+    
+
+
+
+    <p><br>
+
+
+
+    </p>
+
+
+
+    </div><!--end fluid    class="minHeight300"     content-->
+
+
+
+                   <table table table-striped table-lg mt-sm mb-0 sources-table">
+
+             
+
+                        </table>
+
+                        </div>
+
+                </section>
+
+                <section class="widget large">
+
+                    <header>
+ 
+					
+
+
+ 
+                    </header>
+
+                    <div class="body win4">
+                        <div id="win4">
+<div class="body win4"></div>
+<div class="body win4"></div>
+<div class="body win4  ">
+<script type="text/javascript">
+d3.selectAll(".win4")
+.attr("class","box gradi")
+    .each(function (d, i) {
+        d3.select(this).append("div").append("p").text(i);
+    });
+</script>
+           </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="col-lg-4 win1">
+
+                <section id="win1" class="widget large">
+
+
+
+  <h4> 
+
+                            <h4 class="rem1-3  ">ABOUT US</h4>
+
+                        </h4>
+
+
+
+                        <div class="actions" >
+
+                                <h4 class="text-muted pull-right"></h4>
+
+								<img  id="danielle-img" src="images/dprofile.jpg" /><br /><hr>
+
+                            </div>
+
+ 
+
+                     
+<div id="bio">
+  <p>Founded in 2012 by Danielle Dur&aacute;n, M.S., Better Statistical Consulting has over 7 years of experience in quantitative analysis. Located in Albuquerque, New Mexico, BSC offers services related to analyzing quantitative data and reporting results in academic journals and business briefs alike. Recent projects include research design, completion, analysis, and report production for Caterpillar, Inc., and data analysis for the Illinois Environmental Protection Agency and the New Mexico Department of Health. Danielle, a social science researcher by training, has an educational background in statistics and research methods. Her propensity for data analysis and special pricing offers competitive benefits for clients.</p>
+</div>
+ 
+
+                 
+
+
+
+
+
+                </section>
+
+                <section id="win2" class="widget widget-tabs">
+
+                    <header>
+
+                        <ul class="nav nav-tabs">
+
+                            <li class="active">
+
+                                <a href="#stats" data-toggle="tab">STRATEGY</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#report" data-toggle="tab">PROCESS</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#dropdown1" data-toggle="tab">ANALYSIS</a>
+
+                            </li>
+
+                        </ul>
+
+                    </header>
+
+                    <div class="body tab-content  win2">
+
+                        <div id="stats" class="tab-pane active clearfix">
+
+                     
+
+                     
+
+                            <h5 class="tab-header"><span class="label label-primary"><i class="fa fa-comments"></i></span> STRATEGY</h5>
+
+
+
+ 
+
+    <p><strong>Better Statistical Consulting</strong> provides many data services, for professionals, students, and researchers. Danielle has experience analyzing data from diverse fields, including economics, environmental conservation, education, mental health, sociology, and business, among others. BSC offers the main services:<br>
+
+
+
+    </p>
+
+
+
+<br />
+
+ 
+
+
+
+ 
+
+ </ul> 
+
+
+
+
+
+
+
+
+
+                      </div>
+
+                        <div id="report" class="tab-pane">
+
+                            <h5 class="tab-header"><i class="fa fa-cog"></i> PROCESS</h5>
+
+                    <p> 
+
+
+
+Better Statistical Consulting offers services that fall under two broad categories: assisting with research design and statistical considerations for your study, and performing the data analysis with the appropriate explanation of results. BSC quotes each service separately, so clients may choose to use one service or both, depending on the stage of their project. This allows clients to choose the level of assistance best suited to their project.  
+
+<br /><br />
+
+The process of research design includes choosing an appropriate methodology, study design, sampling methods as applicable, and forming a data analysis plan.  
+
+
+
+The process of statistical work includes executing the data analysis plan, interpreting results and writing up findings according to the medium of distribution (article, dissertation, etc.).  
+
+
+
+BSC handles all of the work on clients’ projects directly. All communication will is directed between the owner, Ms. Pasko, and the client.
+
+
+
+</p>
+
+                       </div>
+
+                        <div id="dropdown1" class="tab-pane">
+
+                            <h5 class="tab-header"><i class="fa fa-database"></i> ANALYSIS</h5>
+
+                       
+
+
+
+<p class="parag"><strong>
+
+
+
+What happens when I contact BSC about my project?</strong>
+
+
+
+<ul class="paraglist">
+
+
+
+<li>The initial consultation is free of charge. The purpose of the initial consultation is for the consultant to gather some information about the clients’ study so that clients can be provided with a quote.
+
+
+
+The best time to speak with a consultant is at the beginning of a project. Better Statistical Consulting offers unlimited email, phone and Skype support through the entirety of the client’s project, allowing for the strategic advantage of aligning research questions and study goals with the correct methodology and data plan. This approach will save the client time and money, and the work will be built upon a solid statistical foundation.</li>
+
+<br />
+
+<li>
+
+
+
+Hiring a consultant to guide you through your methods section will ensure that the study design, measures (e.g. independent and dependent variables), research questions, hypotheses, data analysis plan and sample size justification all work together coherently. Clients receive unlimited telephone and email support in case you have any questions about the results.
+
+
+
+</li>
+
+<br />
+
+<li>
+
+
+
+It is crucial to have a consultant hired by the data analysis phase of your project. BSC performs all of the study-appropriate analyses using the latest versions of STATA and SPSS statistical computing software.  BSC delivers all of the results (e.g. tables and graphs) to you as Microsoft Word documents, along with a written narrative interpretation that demonstrates how to interpret and report the results. Also included is unlimited telephone, email, and Skype support to answer any questions that clients might have.</li>
+
+<br />
+
+<li>
+
+
+
+You will receive continued telephone and email access to me all the way up until the day you graduate. If you or your committee members have any questions about the statistics, I will be prepared to help you answer them.</li>
+
+
+
+<p class="parag"><strong>
+
+
+
+Learn More About Statistical Consulting</strong></p><ul class="paraglist">
+
+
+
+
+
+
+
+<li>Better Statistical Consulting FAQ
+
+
+
+</li><li>Choosing a qualified statistical consultant
+
+
+
+</li><li>Other Statistics Resources</ul>
+
+
+
+ </ul> 
+
+
+
+
+
+
+
+
+
+                             </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <section id="win3" class="widget">
+
+           
+
+                        <header>
+ 
+
+<img src="images/bsc_logo_unmSM.jpg" alt="bscbuilding" id="imgbuilding" />     
+</header>
+           
+               
+        <div class="body win3">
+         
+         
+      
+
+<div id="rates" class="fluid">
+     	<h4 class="parag"> <strong>Get the Statistics Help you need!<br></strong></h4>
+
+
+<p>
+Contact BSC by phone or email <br>to get started today.</p>
+
+
+
+  
+
+
+
+      <p>Rates vary by the services requested. <br>
+
+
+
+        Consultations and estimates are FREE. 
+
+
+
+        <br>
+
+  <br>
+
+       <strong> Special introductory rate for new clients: </strong>
+
+		<br>Free consult, estimate, and half off hourly rate for the first hour.<br>
+
+
+
+   
+
+
+
+        Student rate: $10 off standard hourly rate for students with valid ID.<br>
+
+
+
+      
+
+
+
+      Email info@betterstatisticalconsulting.com for more information.</p>
+
+      <div class="slideouticons   slideout"  id="contact-sm">
+
+                
+
+            <label for="togglebox" class="mainlabel fa fa-share-alt"></label>
+    
+    
+    
+            <div class="iconswrapper">
+    
+                <ul>
+    
+                    <li>
+    
+                        <a href="https://twitter.com/" target="_blank" class="fa fa-twitter" title="Twitter"></a>
+    
+                    </li>
+    
+                    <li>
+    
+                        <a href="https://www.facebook.com/BetterStatisticalConsulting" target="_blank" class="fa fa-facebook" title="Facebook"></a>
+    
+                    </li>
+    
+    
+                </ul>
+    
+            </div>
+    
+        </div>
+    
+
+    </div><div id="footer" class="images fluid prefooter">
+
+
+
+
+
+<p class="parag"><strong>
+
+
+
+Danielle K. Dur&aacute;n, M.S.</strong><br>
+
+
+
+
+
+
+
+8201 Golf Course Rd. NW<br>
+
+
+
+
+
+
+
+D-3, Suite 107<br>
+
+
+
+
+
+
+
+Albuquerque, NM 87120<br>
+
+
+
+
+
+
+
+1.505.750.0665<br>
+
+
+
+<br>
+
+
+
+
+
+
+
+<a href="mailto:info@betterstatisticalconsulting.com">info@betterstatisticalconsulting.com</a><br>
+
+
+
+
+
+
+BetterStatisticalConsulting.com</p>
+
+
+
+</p>
+
+</div><!--end fluid prefooter-->   
+
+ 
+
+          <footer id="footer" class="fluid content-footer">    
+<p><small>
+
+
+  Copyright &copy; 2018 Better Statistical Consulting. All Rights Reserved.
+
+ 
+
+      <script type="text/javascript">
+
+ 
+
+
+
+            </script></small></p>
+    </footer> 
+
+
+</div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+   
+
+        </div>
+ 
+    </div>
+
+<!-- common libraries. required for every page-->
+
+<script src="lib/jquery/dist/jquery.min.js"></script> 
+
+<script src="lib/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+
+<script src="lib/widgster/widgster.js"></script>
+
+<script src="lib/underscore/underscore.js"></script> 
+
+<!-- common application js -->
+
+<script src="js/app.js"></script>
+
+<script src="js/settings.js"></script> 
+
+<!-- common templates -->
+
+<script type="text/template" id="settings-template">
+
+    <div class="setting clearfix">
+
+        <div>Sidebar on the</div>
+
+        <div id="sidebar-toggle" class="pull-left btn-group" data-toggle="buttons-radio">
+
+            <% onRight = sidebar == 'right'%>
+
+            <button type="button" data-value="left" class="btn btn-sm btn-default <%= onRight? '' : 'active' %>">Left</button>
+
+            <button type="button" data-value="right" class="btn btn-sm btn-default <%= onRight? 'active' : '' %>">Right</button>
+
+        </div>
+
+    </div>
+
+    <div class="setting clearfix">
+
+        <div>Sidebar</div>
+
+        <div id="display-sidebar-toggle" class="pull-left btn-group" data-toggle="buttons-radio">
+
+            <% display = displaySidebar%>
+
+            <button type="button" data-value="true" class="btn btn-sm btn-default <%= display? 'active' : '' %>">Show</button>
+
+            <button type="button" data-value="false" class="btn btn-sm btn-default <%= display? '' : 'active' %>">Hide</button>
+
+        </div>
+
+    </div>
+
+<div class="setting clearfix">
+
+    
+
+    </div>
+
+</script>
+
+
+
+<script type="text/template" id="sidebar-settings-template">
+
+    <% auto = sidebarState == 'auto'%>
+
+    <% if (auto) {%>
+
+    <button type="button"
+
+            data-value="icons"
+
+            class="btn-icons btn btn-transparent btn-sm">Icons</button>
+
+    <button type="button"
+
+            data-value="auto"
+
+            class="btn-auto btn btn-transparent btn-sm">Auto</button>
+
+    <%} else {%>
+
+    <button type="button"
+
+            data-value="auto"
+
+            class="btn btn-transparent btn-sm">Auto</button>
+
+    <% } %>
+
+</script>
+
+
+
+    <!-- page specific scripts -->
+
+        <!-- page libs -->
+
+        <script src="lib/slimScroll/jquery.slimscroll.min.js"></script>
+
+        <script src="lib/jquery.sparkline/index.js"></script>
+
+
+ 
+
+    <!--  <script src="lib/d3/d3.min.js"></script>
+
+      <script src="lib/nvd3/build/nv.d3.min.js"></script>
+
+    -->
+
+        <!-- page application js -->
+
+        <script src="js/index.js"></script>
+
+        <script src="js/chat.js"></script>
+
+
+
+        <!-- page template -->
+
+        <script type="text/template" id="message-template">
+
+            <div class="sender pull-left">
+
+                <div class="icon">
+
+                    <img src="img/2.png" class="img-circle" alt="">
+
+                </div>
+
+                <div class="time">
+
+                    just now
+
+                </div>
+
+            </div>
+
+            <div class="chat-message-body">
+
+                <span class="arrow"></span>
+
+                <div class="sender"><a href="#">Tikhon Laninga</a></div>
+
+                <div class="text">
+
+                    <%- text %>
+
+                </div>
+
+            </div>
+
+        </script>
+
+
+
+
+
+</body>
+
+</html>
