@@ -48,7 +48,7 @@
     "jqvmap": "https://github.com/shoudaos/jqvmap.git#7828d7cbacfcc91850831aa6fe6f7b8657e7aa17",
     "jsonwebtoken": "7.3.0",
     "messenger": "git+https://github.com/HubSpot/messenger.git#v1.4.2",
-    "node-fetch": "1.6.3",
+    "node-fetch": "2.6.1",
     "normalize.css": "6.0.0",
     "nvd3": "1.8.6",
     "passport": "0.3.2",
