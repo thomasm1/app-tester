@@ -57,7 +57,7 @@
     "karma-jasmine-matchers": "^3.8.3",
     "karma-phantomjs-launcher": "^1.0.4",
     "load-grunt-tasks": "^1.0.0",
-    "mongoose": "^5.3.9",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
     "path": "^0.12.7",
     "popper.js": "^1.11.1",
